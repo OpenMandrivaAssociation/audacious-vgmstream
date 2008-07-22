@@ -1,14 +1,14 @@
 %define name audacious-vgmstream
 %define oname vgmstream
 %define version 0
-%define svn r359
+%define svn r368
 %define release %mkrel 0.%svn.1
 
 Summary: Audacious plugin for playback of various streamed video game formats
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{oname}-%{svn}.tar.bz2
+Source0: %{oname}-%{svn}.tar.gz
 License: MIT
 Group: Sound
 Url: https://sourceforge.net/projects/vgmstream/
@@ -25,7 +25,7 @@ Obsoletes: audacious-cube
 This is vgmstream, a library for playing streamed audio from video games.
 
 %prep
-%setup -q -n %oname
+%setup -q -n %oname-%svn
 ./bootstrap
 
 %build
