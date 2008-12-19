@@ -1,7 +1,7 @@
 %define name audacious-vgmstream
 %define oname vgmstream
 %define version 0
-%define svn r386
+%define svn r526
 %define release %mkrel 0.%svn.1
 
 Summary: Audacious plugin for playback of various streamed video game formats
@@ -29,6 +29,7 @@ This is vgmstream, a library for playing streamed audio from video games.
 ./bootstrap
 
 %build
+export CPPFLAGS=-D_FILE_OFFSET_BITS=64
 %configure2_5x
 %make -f Makefile.unix
 
