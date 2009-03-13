@@ -1,7 +1,7 @@
 %define name audacious-vgmstream
 %define oname vgmstream
 %define version 0
-%define svn r526
+%define svn r601
 %define release %mkrel 0.%svn.1
 
 Summary: Audacious plugin for playback of various streamed video game formats
