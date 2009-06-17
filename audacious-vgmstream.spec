@@ -18,6 +18,8 @@ BuildRequires: libaudacious-devel
 BuildRequires: libmpg123-devel
 BuildRequires: libvorbis-devel
 BuildRequires: gtk+2-devel
+#gw libtool dep:
+BuildRequires: libltdl-devel
 Requires: audacious
 Provides: audacious-cube
 Obsoletes: audacious-cube
