@@ -1,0 +1,20 @@
+Index: unix/data.c
+===================================================================
+--- unix/data.c	(Revision 711)
++++ unix/data.c	(Arbeitskopie)
+@@ -10,7 +10,6 @@
+ void vgmstream_pause(InputPlayback *context,gshort paused);
+ void vgmstream_seek(InputPlayback *context,gint time);
+ int vgmstream_get_time(InputPlayback *context);
+-void vgmstream_get_song_info(gchar *pFile,gchar **title,gint *length);
+ void vgmstream_mseek(InputPlayback *context,gulong ms);
+ void vgmstream_file_info_box(gchar *pFile);
+ 
+@@ -235,7 +234,6 @@
+   .pause = vgmstream_pause,
+   .seek = vgmstream_seek,
+   .get_time = vgmstream_get_time,
+-  .get_song_info = vgmstream_get_song_info,
+   .vfs_extensions = vgmstream_exts,
+   .mseek = vgmstream_mseek,
+   .file_info_box = vgmstream_file_info_box,

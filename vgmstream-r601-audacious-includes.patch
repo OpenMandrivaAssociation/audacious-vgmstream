@@ -1,0 +1,22 @@
+diff -p -up vgmstream-r601/unix/main.c~ vgmstream-r601/unix/main.c
+--- vgmstream-r601/unix/main.c~	2008-06-12 02:15:55.000000000 +0200
++++ vgmstream-r601/unix/main.c	2009-05-13 10:51:52.000000000 +0200
+@@ -3,7 +3,6 @@
+ #include <audacious/plugin.h>
+ #include <audacious/output.h>
+ #include <audacious/i18n.h>
+-#include <audacious/strings.h>
+ 
+ #include <unistd.h>
+ #include <pthread.h>
+diff -p -up vgmstream-r601/unix/vfs.c~ vgmstream-r601/unix/vfs.c
+--- vgmstream-r601/unix/vfs.c~	2008-07-11 10:29:04.000000000 +0200
++++ vgmstream-r601/unix/vfs.c	2009-05-13 10:52:21.000000000 +0200
+@@ -3,7 +3,6 @@
+ #include <audacious/plugin.h>
+ #include <audacious/output.h>
+ #include <audacious/i18n.h>
+-#include <audacious/strings.h>
+ #include <glib.h>
+ 
+ #include <unistd.h>
