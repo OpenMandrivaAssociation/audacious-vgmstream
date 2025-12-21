@@ -15,6 +15,11 @@ License: MIT
 Group: Sound
 Url: https://sourceforge.net/projects/vgmstream/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libaudacious-devel
 BuildRequires: libmpg123-devel
 BuildRequires: libvorbis-devel
